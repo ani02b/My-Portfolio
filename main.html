@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="tab.js"></script>
+    <script src="https://kit.fontawesome.com/3b859e1fe2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I Am <span>Anindya Bag</span><br>From India</h1>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="main-img.jpg" alt="Anindya">
+                </div>
+                <div class="about-col2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am a coder and a passionate web developer. I am a devoted learner and
+                    love to learn and innovate in order to upgrade my skills. I belong from West Bengal, India.
+                    Currently I am pursuing my B.Tech in Computer Science & Engineering from Kalinga Institute of
+                    Industrial Technology, Bhubaneswar, Odisha. Please go ahead to know more about me.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>July 2023 - Current</span><br>Web developer intern at Bharat Intern</li>
+                            <li><span>July 2023 - Current</span><br>Web developer intern at Cloud Counselage Pvt. Ltd.</li>
+                            <li><span>June 2023 - July 2023</span><br>Soft skills training from TCS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - Current</span><br>B.Tech in CSE from Kalinga Institute of Industrial Technology, Bhubaneswar</li>
+                            <li><span>2019 - 2021</span><br>Higher secondary education from Mary Immaculate School in PCM</li>
+                            <li><span>2006 - 2019</span><br>Seconadry education from Mary Immaculate School, West Bengal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services" id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>It is my best expertise among all my fields, specially the front-end development</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Beside web development I am also a bit professional in android app development</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="skills" id="skills">
+        <div class="container">
+            <h1 class="subtitle">My Skills</h1>
+            <div class="skill">
+                <div class="skill-title">HTML</div>
+                <div class="skill-bar"></div>
+                <div class="html skill-fill">
+                    <span class="skill-percent">70%</span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-title">CSS</div>
+                <div class="skill-bar"></div>
+                <div class="css skill-fill">
+                    <span class="skill-percent">50%</span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-title">JavaScript</div>
+                <div class="skill-bar"></div>
+                <div class="js skill-fill">
+                    <span class="skill-percent">70%</span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-title">Python</div>
+                <div class="skill-bar"></div>
+                <div class="py skill-fill">
+                    <span class="skill-percent">60%</span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-title">Java</div>
+                <div class="skill-bar"></div>
+                <div class="java skill-fill">
+                    <span class="skill-percent">80%</span>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-title">MySQL</div>
+                <div class="skill-bar"></div>
+                <div class="sql skill-fill">
+                    <span class="skill-percent">50%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> anindyabag02@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +919547555004</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/anindya-bag-700048109/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/ani02b"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.instagram.com/the_known_a.bag/"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="Anindya_Bag.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Made by <span>Anindya.</span> | © 2023 All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
